@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+
+    <!-- -------------------- Title ----------------------- -->
+    <title>Tic Toe Game</title>
+    <link rel="icon" href="./images/favicon-yellow.png">
+    <!-- ---------------------------------------------------- -->
+
+    <!-- -------------------- Css Link ----------------------- -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/style-color-yellow.css" rel="stylesheet">
+    <!-- ----------------------------------------------------- -->
+
+    <!-- -------------------- Font Awasome Cdn ----------------------- -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <!-- ------------------------------------------- -->
+</head>
+
+<body>
+
+    <div class="page-wrapper">
+
+        <!------------------------------- Navbar --------------------------------------->
+        <header class="main-header header-style-two">
+            <!-- ***** Navbar *****  -->
+            <div class="header-lower">
+                <div class="main-box">
+
+                    <div class="logo-box">
+                        <div class="logo"><a href="./index.html"><img src="images/logo-2-yellow.png" alt
+                                    style="width: 150px;" title="Sotech"></a></div>
+                    </div>
+
+                    <div class="nav-outer">
+                        <nav class="nav main-menu">
+                            <ul class="navigation">
+                                <li><a href="./index.html">Home</a></li>
+                                <li><a href="./page-aboutus.html">About Us</a></li>
+                                <li class="dropdown"><a href="./page-services.html">Services</a>
+                                    <ul>
+                                        <li><a href="./App Development.html">Mobile
+                                                Application
+                                                Development</a></li>
+                                        <li><a href="./Web Development.html">Web
+                                                Development</a></li>
+                                        <li><a href="./ui-ux designer.html">UI/UX
+                                                Designer</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="./page-career.html">Career</a></li>
+                                <li class="current"><a href="./page-portfolio.html">Portfolio</a></li>
+                                <li><a href="./page-contact.html">Contact Us</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+
+                    <div class="take-a-solution">
+                        <a href="page-contact.html">
+                            <button>
+                                Take a Solution
+                            </button>
+                        </a>
+                    </div>
+
+                    <div class="outer-box">
+                        <div class="mobile-nav-toggler"><span class="icon lnr-icon-bars"></span></div>
+                    </div>
+
+                </div>
+            </div>
+            <!-- **** End Navbar ****  -->
+
+            <!-- ***** Side Menu *****  -->
+            <div class="mobile-menu">
+                <div class="menu-backdrop"></div>
+                <nav class="menu-box">
+
+                    <div class="upper-box">
+                        <div class="nav-logo"><a href="index.html"><img src="images/logo-yellow.png" alt title></a>
+                        </div>
+                        <div class="close-btn"><i class="icon fa fa-times"></i></div>
+                    </div>
+
+                    <ul class="navigation clearfix">
+                    </ul>
+
+                    <ul class="contact-list-one">
+                        <li>
+                            <div class="contact-info-box">
+                                <i class="icon lnr-icon-phone-handset"></i>
+                                <span class="title">Call Now</span>
+                                <a href="tel:+92880098670">+91 93272
+                                    28578</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="contact-info-box">
+                                <span class="icon lnr-icon-envelope1"></span>
+                                <span class="title">Send Email</span>
+                                <a href="/cdn-cgi/l/email-protection#2048454c5060434f4d50414e590e434f4d"><span
+                                        class="_cf_email_"
+                                        data-cfemail="96fef3fae6d6f5f9fbe6f7f8efb8f5f9fb">info@brainartit.in</span></a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="contact-info-box">
+                                <span class="icon lnr-icon-clock"></span>
+                                <span class="title">Send Email</span> Mon -
+                                Sat 9:00 - 6:00 Sunday - CLOSED
+                            </div>
+                        </li>
+                    </ul>
+
+                    <ul class="social-links">
+                        <li><a href="https://www.linkedin.com/company/brainart-it-solution/"><i
+                                    class="fa-brands fa-linkedin-in"></i></a></li>
+                        <li><a href="https://www.instagram.com/brainart_it_solution/"><i
+                                    class="fab fa-instagram"></i></a></li>
+                        <li><a href="https://www.facebook.com/people/Brainart-it-soution/"><i
+                                    class="fab fa-facebook"></i></a></li>
+                        <li><a href="https://wa.me/9327228578"><i class="fa-brands fa-whatsapp"></i></a></li>
+                    </ul>
+
+                </nav>
+            </div>
+            <!-- **** End Side Menu ****  -->
+
+            <!-- ***** Sticky Header *****  -->
+            <div class="sticky-header">
+                <div class="auto-container">
+                    <div class="inner-container">
+
+                        <div class="logo">
+                            <a href="index.html" title><img src="images/logo-2-yellow.png" alt title></a>
+                        </div>
+
+                        <div class="nav-outer">
+                            <nav class="main-menu">
+                                <div class="navbar-collapse show collapse clearfix">
+                                    <ul class="navigation clearfix"></ul>
+                                </div>
+                            </nav>
+                            <div class="mobile-nav-toggler"><span class="icon lnr-icon-bars"></span></div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <!-- ***** End Sticky Menu ***** -->
+        </header>
+        <!----------------------------- End Navbar --------------------------------------->
+
+        <!-- ----------------------------- Banner Section --------------------------------------->
+        <section class="page-title" style="background-image: url(images/main-slider/abouts.jpg);">
+            <div class="auto-container">
+                <div class="title-outer">
+                    <h1 class="title">RadioLuisteren.fm: Live radio</h1>
+                    <ul class="page-breadcrumb">
+                        <li><a href="./index.html">Home</a></li>
+                        <li><a href="./page-portfolio.html">Prtfolio</a></li>
+                        <li>RadioLuisteren.fm: Live radio</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <!-------------------------------End Banner Section ------------------------------------- -->
+
+        <!-- ---------------------------- Description ------------------------------------------- -->
+        <section id="description">
+            <div class="container">
+                <!-- <img src="./images/games/Frame 36.jpg" alt=""> -->
+
+                <h1 class="des-title-text">RadioLuisteren.fm: Live Radio App</h1>
+                <p>
+                    At BrainArt IT Solution, we had the privilege of developing RadioLuisteren.fm, a feature-rich mobile
+                    app designed to bring the world of radio to your fingertips. This app consolidates all national and
+                    regional radio stations into one platform, ensuring users have seamless access to music, news,
+                    sports, and entertainment wherever they go.</p>
+
+                <div style="text-align: center;">
+                    <i class="fa-solid fa-circle" style="font-size: 10px; margin: 10px 0px;"></i>
+                    <i class="fa-solid fa-circle" style="font-size: 10px; margin: 10px 0px;"></i>
+                    <i class="fa-solid fa-circle" style="font-size: 10px; margin: 10px 0px;"></i>
+                </div>
+
+                <h4 class="des-title-text">About the App</h4>
+                <p>RadioLuisteren.fm was designed with the user in mind, offering a simple, intuitive interface and an
+                    engaging experience for people of all ages. Whether you're at home, commuting, or working out, this
+                    app ensures your favorite radio programs are always within reach.</p>
+
+                <div style="text-align: center;">
+                    <i class="fa-solid fa-circle" style="font-size: 10px; margin: 10px 0px;"></i>
+                    <i class="fa-solid fa-circle" style="font-size: 10px; margin: 10px 0px;"></i>
+                    <i class="fa-solid fa-circle" style="font-size: 10px; margin: 10px 0px;"></i>
+                </div>
+
+                <h3 class="des-title-text">Features We Delivered</h3>
+
+                <div>
+                    <h5 class="des-key-fet-text">Live Radio Streaming</h5>
+                    <p class="des-key-fet-text-p">We integrated live streaming capabilities for both national and
+                        regional radio stations, allowing users to listen to their favorite stations anytime, anywhere.
+                    </p>
+
+                    <h5 class="des-key-fet-text">Real-Time News and Updates</h5>
+                    <p class="des-key-fet-text-p">Built-in features to keep users informed about the latest news,
+                        events, and live sports coverage.</p>
+
+                    <h5 class="des-key-fet-text">Diverse Content</h5>
+                    <p class="des-key-fet-text-p">We ensured the app caters to all tastes with access to music, sports,
+                        and entertainment from various stations.</p>
+
+                    <h5 class="des-key-fet-text">User-Friendly Interface</h5>
+                    <p class="des-key-fet-text-p">Developed a clean, intuitive design with simple navigation, making it
+                        easy for users to discover and enjoy new stations or their long-time favorites.</p>
+
+                    <h5 class="des-key-fet-text">Optimized for All Occasions</h5>
+                    <p class="des-key-fet-text-p">Whether at home, on the road, or during a workout, the app is designed
+                        to provide the best experience for every moment.</p>
+
+                    <h5 class="des-key-fet-text">Why We Built It</h5>
+                    <p class="des-key-fet-text-p">Our goal was to create an app that enhances the way users interact
+                        with radio, making it accessible, enjoyable, and tailored to their needs. With
+                        RadioLuisteren.fm, we delivered a solution that brings the timeless appeal of radio into the
+                        digital age.
+                    </p>
+
+                    <h5 class="des-key-fet-text">The Result</h5>
+                    <p class="des-key-fet-text-p">RadioLuisteren.fm is a highly functional, scalable, and visually
+                        engaging app that has transformed how users access and enjoy live radio. It stands as a
+                        testament to our commitment to delivering high-quality, user-centric solutions for our clients.
+                    </p>
+                </div>
+                <p>Looking for a reliable partner to bring your app idea to life? Contact us today and let’s create
+                    something extraordinary together!</p>
+
+
+            </div>
+        </section>
+
+        <!-- -----------------------------End Description ------------------------------------------ -->
+
+        <div class="container">
+
+            <section id="image-section"
+                style="justify-content: center;gap: 10px;margin-top: -110px;">
+
+                <img src="./images/games/41.png" alt>
+                <img src="./images/games/42.png" alt>
+                <img src="./images/games/43.png" alt>
+                <img src="./images/games/44.png" alt>
+
+            </section>
+        </div>
+     
+
+        <!-- --------------------------- Footer ----------------------------------->
+        <footer class="main-footer">
+            <div class="bg-image" style="background-image: url(./images/background/8-yellow.png);"></div>
+
+            <div class="widgets-section">
+                <div class="auto-container">
+                    <div class="row">
+                        <!--1st Column-->
+                        <div class="footer-column col-xl-3 col-lg-12 col-md-6 col-sm-12">
+                            <div class="footer-widget about-widget">
+                                <div class="logo"><a href="index.html"><img src="images/logo-yellow.png" alt
+                                            style="width: 200px;"></a></div>
+                                <div class="text">Delivering cutting-edge IT
+                                    solutions to unlock limitless
+                                    possibilities
+                                    for your brand.
+                                </div>
+                                <ul class="social-icon-two">
+                                    <li><a href="https://www.linkedin.com/company/brainart-it-solution/"><i
+                                                class="fa-brands fa-linkedin-in"></i></a></li>
+                                    <li><a href="https://www.instagram.com/brainart_it_solution/"><i
+                                                class="fab fa-instagram"></i></a></li>
+                                    <li><a href="https://www.facebook.com/people/Brainart-it-soution/"><i
+                                                class="fab fa-facebook"></i></a></li>
+                                    <li><a href="https://wa.me/9327228578"><i class="fa-brands fa-whatsapp"></i></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <!--2 Column-->
+                        <div class="footer-column col-xl-3 col-lg-4 col-md-6 col-sm-12">
+                            <div class="footer-widget">
+                                <h3 class="widget-title">Explore</h3>
+                                <ul class="user-links">
+                                    <li><a href="./page-aboutus.html">About Us</a></li>
+                                    <li><a href="./page-services.html">Services</a></li>
+                                    <li><a href="./page-career.html">Career</a></li>
+                                    <li><a href="./page-portfolio.html">Portfolio</a></li>
+                                    <li><a href="./page-contact.html">Contact Us</a></li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <!--3 Column-->
+                        <div class="footer-column col-xl-3 col-lg-4 col-md-6 col-sm-12">
+                            <div class="footer-widget contact-widget">
+                                <h3 class="widget-title">Contact</h3>
+                                <div class="widget-content">
+                                    <div class="text">440, Opera business
+                                        hub, Lajamni Chowk, Digital Valley,
+                                        Surat,
+                                        Gujarat 394101</div>
+                                    <ul class="contact-info">
+                                        <li><i class="fa fa-envelope"></i>
+                                            <a
+                                                href="/cdn-cgi/l/email-protection#59373c3c3d313c35291920362c2b3d3634383037773a3634"><span
+                                                    class="_cf_email_"
+                                                    data-cfemail="c7a9a2a2a3afa2abb787a4a8aab7a6a9bee9a4a8aa">info@brainartit.in</span></a><br>
+                                        </li>
+                                        <li><i class="fa fa-phone-square"></i>
+                                            <a href="tel:+926668880000">+91
+                                                93272
+                                                28578</a><br>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!--4 Column-->
+                        <div class="footer-column col-xl-3 col-lg-4 col-md-6 col-sm-12">
+                            <div class="footer-widget gallery-widget">
+                                <h3 class="widget-title">Gallery</h3>
+                                <div class="widget-content">
+                                    <div class="outer clearfix">
+                                        <figure class="image">
+                                            <a href="#"><img src="images/ff1.jpg.png" alt=""></a>
+                                        </figure>
+                                        <figure class="image">
+                                            <a href="#"><img src="images/ff2.jpg.png" alt=""></a>
+                                        </figure>
+                                        <figure class="image">
+                                            <a href="#"><img src="images/ff3.jpg.png" alt=""></a>
+                                        </figure>
+                                        <figure class="image">
+                                            <a href="#"><img src="images/ff4.jpg.png" alt=""></a>
+                                        </figure>
+                                        <figure class="image">
+                                            <a href="#"><img src="images/ff5.jpg.png" alt=""></a>
+                                        </figure>
+                                        <figure class="image">
+                                            <a href="#"><img src="images/ff6.jpg.png" alt=""></a>
+                                        </figure>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+        </footer>
+        <!-- ------------------------- End Footer -------------------------------------->
+
+    </div>
+
+    <!-- ---------------------- Whatsapp Icon ------------------------ -->
+    <div class="scroll-to-top" data-target="html"><a href="https://wa.me/9327228578"><span
+                class="fa-brands fa-whatsapp"></a></span></div>
+    <!-- ------------------------------------------------------------- -->
+
+    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
+    <script src="js/jquery.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.fancybox.js"></script>
+    <script src="js/jquery-ui.js"></script>
+    <script src="js/wow.js"></script>
+    <script src="js/appear.js"></script>
+    <script src="js/select2.min.js"></script>
+    <script src="js/swiper.min.js"></script>
+    <script src="js/owl.js"></script>
+    <script src="js/script.js"></script>
+
+    <!-- form submit -->
+    <script src="js/jquery.validate.min.js"></script>
+    <script src="js/jquery.form.min.js"></script>
+    <script>
+        (function ($) {
+            $("#contact_form").validate({
+                submitHandler: function (form) {
+                    var form_btn = $(form).find('button[type="submit"]');
+                    var form_result_div = '#form-result';
+                    $(form_result_div).remove();
+                    form_btn.before('<div id="form-result" class="alert alert-success" role="alert" style="display: none;"></div>');
+                    var form_btn_old_msg = form_btn.html();
+                    form_btn.html(form_btn.prop('disabled', true).data("loading-text"));
+                    $(form).ajaxSubmit({
+                        dataType: 'json',
+                        success: function (data) {
+                            if (data.status == 'true') {
+                                $(form).find('.form-control').val('');
+                            }
+                            form_btn.prop('disabled', false).html(form_btn_old_msg);
+                            $(form_result_div).html(data.message).fadeIn('slow');
+                            setTimeout(function () {
+                                $(form_result_div).fadeOut('slow')
+                            }, 6000);
+                        }
+                    });
+                }
+            });
+        })(jQuery);
+    </script>
+</body>
+
+</html>
